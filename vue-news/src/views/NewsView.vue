@@ -5,7 +5,9 @@
         {{ user.title }}
       </a>
       <small>
-        {{ user.time_ago }} by {{ user.user }}
+        {{ user.time_ago }} by 
+        <!-- <router-link v-bind:to="'/user/' + user.user">{{ user.user }}</router-link> -->  <!-- ES5-->
+        <router-link v-bind:to="`/user/${user.user}`">{{  user.user }}</router-link> <!-- ES6-->
       </small>
     </p>
   </div>
