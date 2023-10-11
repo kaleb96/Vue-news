@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>name : {{ fetchedUser.id}}</p>
+    <p>name : {{ fetchedUser.id }}</p>
     <p>karma : {{ fetchedUser.karma }}</p>
     <p>created : {{ fetchedUser.created }}</p>
   </div>
